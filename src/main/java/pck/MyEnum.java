@@ -39,10 +39,6 @@ public abstract class MyEnum<E extends MyEnum<E>> {
     }
 
 
-    public static <T extends MyEnum> ArrayList<? super T> values(Class clazz) {
-        return null;
-    }
-
     public E valueOf(String name) {
         for(Object o : date) {
             if (((MyEnum) o).getName().equals(name)) {
